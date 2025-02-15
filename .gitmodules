@@ -1,0 +1,3 @@
+[submodule "ws-eclipse/ws-eclipse/exercicios_servicos_interfaces"]
+	path = ws-eclipse/ws-eclipse/exercicios_servicos_interfaces
+	url = git@github.com:dmadail/exercicios_servicos_interfaces.git
