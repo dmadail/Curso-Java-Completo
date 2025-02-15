@@ -1,4 +1,7 @@
-TV Led,1290.99,1
-Video Game, 350.50,3
-Iphone,900.00,2
-Samsung 9,850.00,2
+Na pasta principal do repositorio
+
+git submodule update --remote ws-eclipse/exercicios_servicos_interfaces
+
+git add ws-eclipse/exercicios_servicos_interfaces
+git commit -m "Atualizando submódulo para a versão mais recente"
+git push origin main
