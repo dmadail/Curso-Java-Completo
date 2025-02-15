@@ -1,8 +1,0 @@
-package model.services;
-
-public class ContratoService {
-	
-	public void processoContrato(Contrato contrato, Integer mes) {
-		
-	}
-}
