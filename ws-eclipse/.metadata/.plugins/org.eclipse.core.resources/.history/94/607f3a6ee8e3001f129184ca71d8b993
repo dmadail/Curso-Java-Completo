@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class exercicio2 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		double area, raio;
+		
+		System.out.println("Vamos calcular a área de um círculo");
+		System.out.println();
+		System.out.println("Digite o valor do raio: ");
+		raio = sc.nextDouble();
+
+	}
+
+}

@@ -1,0 +1,48 @@
+
+public class stringFuncoes {
+
+	public static void main(String[] args) {
+		String teste = " Danielle Da Rosa Gonzatto Madail ";
+		
+//		Formatar: toLowerCase(), toUpperCase(), trim()
+		System.out.println("Original    : " + teste);
+		
+		System.out.println("Lower Case  : " + teste.toLowerCase());
+		
+		System.out.println("Upper Case  : " + teste.toUpperCase());
+		
+		System.out.println("Trim        : " + teste.trim());
+		
+		
+//		Recortar: substring(inicio), substring(inicio, fim)
+		System.out.println("Substring(2): " + teste.substring(2));
+		System.out.println("Substring(2): " + teste.substring(27,34));
+		
+//		Substituir: Replace(char, char), Replace(string, string)
+		System.out.println("Replace     : " + teste.replace("Rosa", "Flor"));
+		System.out.println("Replace (c) : " + teste.replace("a", "4"));
+		
+//		Buscar: IndexOf, LastIndexOf
+		System.out.println("IndexOF     : " + teste.indexOf("el"));
+		System.out.println("LastOF      : " + teste.lastIndexOf("da"));
+
+		
+//		Recortar com Base em uma string: str.Split(" ")
+		String[] vect = teste.split(" " );
+		String nome = vect[0];
+		String sobrenome = vect[1];
+		String sobrenome2 = vect[2];
+		String sobrenome3 = vect[3];
+		String sobrenome4 = vect[4];
+		
+		System.out.println("Nome: " + nome);
+		System.out.println("Sobrenome 1 : " + sobrenome);
+		System.out.println("Sobrenome 2 : " + sobrenome2);
+		System.out.println("Sobrenome 3 : " + sobrenome3);
+		System.out.println("Sobrenome 4 : " + sobrenome4);
+		
+		
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package exercicios_lendo_arquivos;
+
+public class LerAquivo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

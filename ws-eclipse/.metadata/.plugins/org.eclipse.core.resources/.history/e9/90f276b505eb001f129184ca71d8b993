@@ -1,0 +1,10 @@
+package model.services;
+
+import model.entities.Contrato;
+
+public class numero, inicio, valor {
+	
+	public void processoContrato(Contrato contrato, Integer mes) {
+		
+	}
+}

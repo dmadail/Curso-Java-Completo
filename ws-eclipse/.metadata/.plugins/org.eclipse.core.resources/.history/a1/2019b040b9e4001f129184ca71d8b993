@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class forCondicional {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite primeiro quantos números você quer somar. E depois os números separados por 'Enter' ");
+		System.out.println("Ao final iremos etornar o valor somado.");
+		
+		int x = sc.nextInt(),
+			soma = 0;
+		
+		for(int i=0; i < x; i++) {
+			soma += x;
+			x = sc.nextInt();
+		}
+		
+		System.out.println("Soma = " + soma);
+
+	}
+
+}

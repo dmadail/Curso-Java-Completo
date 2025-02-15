@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class tiposDeEntradaDeDados {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+//		String x;
+//		x = sc.next();
+//		System.out.println("Você digitou: " + x);
+//		
+//		int y ;
+//		y = sc.nextInt();
+//		System.out.println("Você digitou: " + y);
+//		
+//		double xy;
+//		xy = sc.nextDouble();
+//		System.out.printf("Você digitou: %.2f%n", xy);
+//		
+//		char c;
+//		c = sc.next().charAt(0);
+//		System.out.println("Você digitou: " + c);
+		
+		String nome;
+		int idade;
+		double notaCurso;
+		String observacao;
+		
+		sc.nextLine();
+		System.out.println("Digite o seu nome: ");
+		nome = sc.nextLine();
+		
+		System.out.println("Digite a sua idade: ");
+		idade = sc.nextInt();
+		
+		System.out.println("Digite a nota do curso: " );
+		notaCurso = sc.nextDouble();
+		
+		sc.nextLine();
+		System.out.println("Digite uma observação: ");
+		observacao = sc.nextLine();
+		
+		
+		System.out.printf("%n%nA %s que possui %d anos, acha que o curso esta com uma nota de %.2f.%nSua observação do curso é: %s %n", nome, idade, notaCurso, observacao);
+		
+		
+		sc.close();
+
+	}
+
+}

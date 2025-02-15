@@ -1,0 +1,73 @@
+package entities;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.List;
+
+import entities.enums.StatusPedido;
+
+public class Pedido {
+	private LocalDateTime dataHoraPedido;
+	private StatusPedido status;
+	
+	List<ItemPedido> itensPedido = new ArrayList<ItemPedido>();
+	
+	private DateTimeFormatter formatDateTime = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+	
+	public Pedido(LocalDateTime dataHoraPedido, StatusPedido status) {
+		this.dataHoraPedido = dataHoraPedido;
+		this.status = status;
+	}
+
+	public LocalDateTime getDataHoraPedido() {
+		return dataHoraPedido;
+	}
+
+	public void setDataHoraPedido(LocalDateTime dataHoraPedido) {
+		this.dataHoraPedido = dataHoraPedido;
+	}
+
+	public StatusPedido getStatus() {
+		return status;
+	}
+
+	public void setStatus(StatusPedido status) {
+		this.status = status;
+	}
+
+	public List<ItemPedido> getItensPedido() {
+		return itensPedido;
+	}
+
+	public void setItensPedido(List<ItemPedido> itensPedido) {
+		this.itensPedido = itensPedido;
+	}
+	
+	public void addItem(ItemPedido item) {
+		itensPedido.add(item);
+	}
+	
+	public void removeItem(ItemPedido item) {
+		itensPedido.remove(item);
+	}
+	
+	public double totalPedido() {
+		double valorTotal = 0;
+		for (ItemPedido itemPedido : itensPedido) {
+			valorTotal += itemPedido.subTotal();
+		}
+		
+		return valorTotal;
+	}
+	
+	public String toString() {
+		return "Data/Hora : "
+				+ dataHoraPedido.format(formatDateTime)
+				+ "\n"
+				+ "Status Pedido"
+				+ status.toString();
+	}
+	
+	
+}

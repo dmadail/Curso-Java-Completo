@@ -1,0 +1,33 @@
+package applications;
+
+
+import java.time.format.DateTimeFormatter;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class ContratosDoTrabalhador {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		
+		System.out.print("Entre com o Nome do Departamento: ");
+		String nomeDepartamento = sc.nextLine();
+		
+		System.out.println("Entre com os Dados do Trabalhador:");
+		System.out.print("Nome: ");
+		String nomeTrabalhador = sc.nextLine();
+		
+		System.out.print("Nível: ");
+		String nivelTrabalhador = sc.nextLine();
+		
+		System.out.print("Salário Base: ");
+		double salarioBase = sc.nextDouble();
+		
+		Trabalhador trabalhador = new Trabalhador(nomeTrabalhador, NivelTrabalho.valueOf(nivelTrabalhador), salarioBase, new Departmento(nomeDepartamento));
+		
+
+	}
+
+}

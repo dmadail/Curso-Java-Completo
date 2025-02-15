@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class exercicio7 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		double x,y;
+		
+		System.out.println("Vou te dizer em qual quadrante o valor se encontra");
+		System.out.println();
+		System.out.println("Digite o valor x: ");
+		x = sc.nextDouble();
+		System.out.println("Digite o valor y: ");
+		y = sc.nextDouble();
+		
+		if (x == 0 && y == 0) {
+			System.out.println("Origem");
+		}
+		else if(x == 0 && y > 0) {
+			System.out.println("Eixo X");
+		}
+		else if(y == 0 && x > 0) {
+			System.out.println("Eixo Y");
+		}
+
+	}
+
+}

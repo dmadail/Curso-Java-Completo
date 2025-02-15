@@ -1,0 +1,6 @@
+package model.services;
+
+public interface PagamentoOnlineService {
+	double taxaPagamento(double valor);
+	double juros(double valor, Integer mes);
+}

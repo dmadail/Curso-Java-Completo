@@ -1,0 +1,56 @@
+package applications;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
+
+import entities.Cliente;
+import entities.ItemPedido;
+import entities.Pedido;
+
+public class Loja {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		DateTimeFormatter formatDateTime = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		
+		System.out.print("Entre com os dados do Cliente: ");
+		String nome = sc.nextLine();
+		
+		System.out.print("Email: ");
+		String email = sc.nextLine();
+		
+		System.out.print("Data Nascimento: (DD/MM/AAAA)");
+		String dataNascimento = sc.next();
+		
+		Cliente cliente = new Cliente(nome, email, LocalDate.parse(dataNascimento,formatDateTime));
+		
+		System.out.print("Entre com os dados do Pedido ");
+		String status = sc.next();
+		
+		System.out.print("Quantos Itens tem o Pedido ");
+		int qtdItens = sc.nextInt();
+		
+		Pedido pedido = new Pedido();
+		
+		for (int i = 1; i <= qtdItens; i++) {
+			
+			System.out.println("Entre com pedido #" + i + ":");
+			
+			System.out.print("Nome Produto: ");
+			String nomeProduto = sc.nextLine();
+			
+			System.out.print("Preço: ");
+			double precoProduto = sc.nextDouble();
+			
+			System.out.print("Quantidade: ");
+			int qtdProduto = sc.nextInt();
+			
+			ItemPedido itemProduto = new ItemPedido(qtdProduto, precoProduto, nomeProduto);
+			pedido.addItem(itemProduto)
+		}
+
+	}
+
+}

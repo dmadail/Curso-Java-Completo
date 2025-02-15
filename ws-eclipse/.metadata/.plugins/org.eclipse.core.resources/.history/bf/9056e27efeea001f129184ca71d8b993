@@ -1,0 +1,51 @@
+package applications;
+
+import java.text.ParseException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Locale;
+import java.util.Scanner;
+
+import model.entities.AluguelCarro;
+import model.entities.Veiculo;
+import model.services.TaxaAluguelBrasil;
+
+public class LojaAluguelCarro {
+
+	
+	public static void main(String[] args) throws ParseException {
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		DateTimeFormatter fmt =  DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+		
+		System.out.println("Entre com os dados do aluguel");
+		System.out.print("Modelo do carro: ");
+		String modeloCarro = sc.nextLine();
+		System.out.print("Retirada (dd/MM/yyyy HH:mm): ");
+		LocalDateTime inicio = LocalDateTime.parse(sc.nextLine(), fmt);
+		System.out.print("Retorno (dd/MM/yyyy HH:mm): ");
+		LocalDateTime fim = LocalDateTime.parse(sc.nextLine(), fmt);
+		
+		AluguelCarro cr = new AluguelCarro(inicio, fim, new Veiculo(modeloCarro));
+
+		System.out.print("Entre com o preço por hora: ");
+		double precoPorHora = sc.nextDouble();
+		System.out.print("Entre com o preço por dia: ");
+		double precoPorDia = sc.nextDouble();
+		
+		ServicoDeAluguel servicoDeAluguel = new ServicoDeAluguel(precoPorDia, precoPorHora, new TaxaAluguelBrasil());
+		
+		servicoDeAluguel.processFatura(cr);
+
+		System.out.println("FATURA:");
+		System.out.println("Pagamento basico: " + String.format("%.2f", cr.getFatura().getPagamentoBase()));
+		System.out.println("Imposto: " + String.format("%.2f", cr.getFatura().getTaxa()));
+		System.out.println("Pagamento total: " + String.format("%.2f", cr.getFatura().getTotalPayment()));
+		
+		sc.close();
+	}
+
+
+}

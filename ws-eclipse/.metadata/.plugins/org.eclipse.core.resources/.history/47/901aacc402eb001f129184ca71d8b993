@@ -1,0 +1,17 @@
+package model.services;
+
+public class PaypalService implements PagamentoOnlineService{
+
+	@Override
+	public double taxaPagamento(double valor) {
+		valor += valor * 0.02;
+		return 0;
+	}
+
+	@Override
+	public double juros(double valor) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

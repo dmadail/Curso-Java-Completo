@@ -1,0 +1,9 @@
+package entities;
+
+import java.time.LocalDateTime;
+
+public class Pedido {
+	private LocalDateTime dataHoraPedido;
+	
+	
+}

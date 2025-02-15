@@ -1,0 +1,31 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * Sequencial 1º = * / %
+		 * 			  2º = + - 
+		 * INT conta1 = 2 * 6 / 3;
+		 * INT conta2 = 3 + 2 * 4;
+		 * INT conta3 = (3 + 2) * 4;
+		 * INT conta4 = 60 / (3 + 2) * 4;
+		 * INT conta5 = 60 / ((3 + 2 ) * 4);
+		 * INT conta6 = 14 % 3;
+		 * INT conta7 = 19 % 5;
+		 * 
+		 * System.out.println(conta1);
+		 * System.out.println(conta2);
+		 * System.out.println(conta3);
+		 * System.out.println(conta4);
+		 * System.out.println(conta5);
+		 * System.out.println(conta6);
+		 * System.out.println(conta7);
+		 */
+		
+		
+		
+		
+	}
+
+}

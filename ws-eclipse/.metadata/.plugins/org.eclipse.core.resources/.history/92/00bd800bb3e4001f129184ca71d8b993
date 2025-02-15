@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class exercicio3 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int combustivel, alcool = 0, gasolina = 0, diesel = 0;
+		
+		
+		System.out.println("Vamos descobrir qual combustível é mais abastecido");
+		System.out.println();
+		System.out.printf("Tabela: %n 1 - Álcool %n 2 - Gasolina %n 3 - Diesel %n 4 - FIM ");
+		System.out.println("Digite combustível abastecido: ");
+		combustivel = sc.nextInt();
+		
+		while (combustivel > 0 && combustivel <= 4 ) {
+			switch (combustivel) {
+			case 1:
+				alcool += 1;
+				break;
+			case 2:
+				gasolina += 1;
+				break;
+			case 3:
+				diesel += 1;
+			}
+		}
+		
+		
+		System.out.println("MUITO OBRIGADA");
+		System.out.println();
+		System.out.println("Álcool : " + alcool);
+		System.out.println("Gasolina: " + gasolina);
+		System.out.println("Diesel: " + diesel);
+
+	}
+
+}

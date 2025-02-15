@@ -1,0 +1,29 @@
+package applications;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
+
+import entities.Cliente;
+
+public class Loja {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		DateTimeFormatter formatDateTime = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		
+		System.out.print("Entre com os dados do Cliente: ");
+		String nome = sc.nextLine();
+		
+		System.out.print("Email: ");
+		String email = sc.nextLine();
+		
+		System.out.print("Data Nascimento: ");
+		String dataNascimento = sc.next();
+		
+		Cliente cliente = new Cliente(nome, email, LocalDate.parse(dataNascimento,formatDateTime));
+
+	}
+
+}

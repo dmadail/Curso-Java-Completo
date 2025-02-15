@@ -1,0 +1,44 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Pensao;
+
+public class Pensionato {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Vamos Alugar Quartos na Pensão ");
+		
+		System.out.print("Quantos quartos vocês quer alugar? ");
+		int qtd = sc.nextInt();
+		
+		Pensao quartos[] = new Pensao[10];
+		
+		
+		for (int i = 0; i < qtd; i++) {
+			System.out.printf("%dº Pessoa: ", i + 1);
+			sc.nextLine();
+			System.out.print("Nome: ");
+			String nome = sc.nextLine();
+			System.out.print("Email: ");
+			String email = sc.nextLine();
+			System.out.print("Quarto: ");
+			int quarto = sc.nextInt();
+			
+			quartos[i] = new Pensao(nome,email,quarto);
+		}
+		
+		for(int i = 0; i < quartos.length; i++) {
+			System.out.println(quartos[i]);
+		}
+		
+
+	}
+
+}

@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class exercicio8 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		double valor,imposto = 0;
+		
+		System.out.println("Vou te dizer se o valor de imposto que você irá pagar");
+		System.out.println();
+		System.out.println("Digite o valor do seu salário: ");
+		valor = sc.nextDouble();
+		
+		if (valor < 2000.0) {
+			System.out.println("Isento");
+		}
+		else {
+			if (valor < 3000.0) {
+				imposto = (valor - 2000.0) * 0.08;
+			}
+			if (valor <= 4500.0) {
+				imposto = 1000.0 * 0.08;
+				imposto = imposto + (valor - 3000.0) * 0.18;
+			}
+			else {
+				imposto = 1000 * 0.08;
+				imposto = imposto + (1500 * 0.18);
+				imposto = imposto + (valor - 4500.0) * 0.28;
+			}
+		}
+		
+		System.out.printf("Imposto R$ %.2f", imposto);
+	}
+
+}

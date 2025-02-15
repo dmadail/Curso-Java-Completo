@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class exercicio3 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		double valor;
+		
+		System.out.println("Vou te dizer se os 2 valores informados são multiplos ou não.");
+		System.out.println();
+		System.out.println("Digite 2 valores sepadores por 'ENTER': ");
+		valor = sc.nextDouble();
+
+	}
+
+}

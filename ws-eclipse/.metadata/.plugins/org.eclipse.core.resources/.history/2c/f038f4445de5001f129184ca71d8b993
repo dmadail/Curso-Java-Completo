@@ -1,0 +1,25 @@
+
+public class stringFuncoes {
+
+	public static void main(String[] args) {
+		
+		
+//		Formatar: toLowerCase(), toUpperCase(), trim()
+		String teste = "Danielle Da Rosa Gonzatto Madail";
+		teste = teste.tolowerCase();
+		System.out.println(teste);
+		
+//		Recortar: substring(inicio), substring(inicio, fim)
+		
+		
+//		Substituir: Replace(char, char), Replace(string, string)
+
+		
+//		Buscar: IndexOf, LastIndexOf
+
+		
+//		Recortar com Base em uma string: str.Split(" ")
+
+	}
+
+}

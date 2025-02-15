@@ -1,0 +1,45 @@
+/*Fazer um programa para ler o caminho de um arquivo .csv contendo os dados de itens vendidos. Cada item possui um nome, preço unitário
+e quantidade, separados por vírgula. Você deve gerar um novo arquivo chamado "summary.csv", localizado em uma subpasta chamada "out" 
+a partir da pasta original do arquivo de origem, contendo apenas o nome e o valor total para aquele item (preço unitário multiplicado 
+pela quantidade),conforme exemplo.*/
+
+package application;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import entities.Produto;
+
+public class ExercicioLerECriarArquivoResposta {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		List<Produto> produtos = new ArrayList<>();
+		
+		System.out.println("Entre com o caminho do arquivo excel para ler os produtos: ");
+		String strfile = sc.nextLine();
+		
+		try (BufferedReader br = new BufferedReader(new FileReader(strfile))) {
+			String linha = br.readLine();
+			
+			while (linha != null) {
+				String[] fields = linha.split(",");
+				String nome = fields[0];
+				int quantidade = fields[1];
+				double preco = fields[2];
+				
+				produtos.add(new Produto());
+				linha = br.readLine();
+			}
+		} catch (IOException e) {
+			System.out.println("Error: " + e.getMessage());
+		} 
+
+	}
+
+}

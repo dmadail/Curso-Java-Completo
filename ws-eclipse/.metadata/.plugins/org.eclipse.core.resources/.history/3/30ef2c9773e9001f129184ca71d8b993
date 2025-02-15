@@ -1,0 +1,45 @@
+package entities;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+public class ProdutoUsado extends Produto{
+	
+	LocalDate dataFabricacao;
+	DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+
+	public ProdutoUsado() {
+		
+	}
+	
+	
+	public ProdutoUsado(String nome, Double preco, String dataFabricacao) {
+		super(nome, preco);
+		this.dataFabricacao = LocalDate.parse(dataFabricacao,fmt1);
+	}
+
+
+	public LocalDate getDataFabricacao() {
+		return dataFabricacao;
+	}
+
+
+	public void setDataFabricacao(LocalDate dataFabricacao) {
+		this.dataFabricacao = LocalDate.parse(dataFabricacao,fmt1);
+	}
+
+
+	@Override
+	public String tagPreco() {
+		return nome 
+			+ "(Usado), R$ " 
+			+ String.format("%.2f", preco) 
+			+ "(Data de Fabricação: "
+			+ dataFabricacao;
+			+ ")"
+	}
+	
+	
+	
+	
+}	
