@@ -60,6 +60,7 @@ public class DadosPessoas {
 		System.out.printf("Media das alturas das mulheres = %.2f \n", somaAlturaMulheres / qtdMulheres);
 		System.out.printf("Numero de homens = %d", qtdHomens);
 		
+		sc.close();
 
 	}
 

@@ -43,7 +43,7 @@ public class CalculaImpostoRenda {
 			System.out.printf("Imposto R$ %.2f", imposto);
 		}
 	 
-		
+		sc.close();
 		
 	}
 

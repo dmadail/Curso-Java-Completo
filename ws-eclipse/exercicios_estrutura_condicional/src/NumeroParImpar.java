@@ -19,7 +19,8 @@ public class NumeroParImpar {
 		else {
 			System.out.println("Ímpar");
 		}
-
+		
+		sc.close();
 	}
 
 }

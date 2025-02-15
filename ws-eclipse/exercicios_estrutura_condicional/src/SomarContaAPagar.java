@@ -34,6 +34,8 @@ public class SomarContaAPagar {
 		}
 		
 		System.out.printf("Total: R$ %.2f", valorItem);
+		
+		sc.close();
 	}
 
 }

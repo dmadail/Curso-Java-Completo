@@ -25,7 +25,7 @@ public class AreaCirculoAtravesRaio {
 		System.out.println();
 		System.out.printf("Área = %.4f", area);
 		
-
+		sc.close();
 	}
 
 }

@@ -39,7 +39,7 @@ public class CalculaAreasTrianguloCirculoTrapezioQuadradoRetangulo {
 		System.out.printf("Retangulo: %.3f%n", areaRetangulo);
 		
 				
-		
+		sc.close();
 
 	}
 

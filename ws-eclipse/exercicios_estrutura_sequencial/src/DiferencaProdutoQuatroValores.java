@@ -25,6 +25,6 @@ public class DiferencaProdutoQuatroValores {
 		diferenca = (a * b - c * d);
 		System.out.println("SOMA = " + diferenca);
 		
-
+		sc.close();
 	}
 }

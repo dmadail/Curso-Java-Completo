@@ -58,6 +58,8 @@ public class CalculaSalarioArrayList {
 		for(Employee x : funcionario) {
 			System.out.println(x.imprimeArray());
 		}
+		
+		sc.close();
 
 	}
 	

@@ -25,6 +25,8 @@ public class TempoDeJogo {
 		}
 		
 		System.out.println("O jogo durou: " + tempo + " Hora(s)");
+		
+		sc.close();
 	}	
 	
 

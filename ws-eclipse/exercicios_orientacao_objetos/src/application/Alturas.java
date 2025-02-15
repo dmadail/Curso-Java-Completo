@@ -56,6 +56,7 @@ public class Alturas {
 		if(nomeMenores != "")
 			System.out.println(nomeMenores);
 		
+		sc.close();
 	}
 
 }

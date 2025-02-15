@@ -38,6 +38,8 @@ public class SaoMultiplos {
 //		else {
 //			System.out.println("Nao sao Multiplos");
 //		}
+		
+		sc.close();
 	}
 
 }

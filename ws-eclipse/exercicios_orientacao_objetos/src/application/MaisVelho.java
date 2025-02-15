@@ -32,7 +32,6 @@ public class MaisVelho {
 		}
 		
 		int maisVelho = 0;
-		double qtdMenor = 0.0;
 		String nomeMaisVelho = "";
 		
 		for (int i = 0; i < qtd; i++) {
@@ -45,6 +44,7 @@ public class MaisVelho {
 		System.out.println();
 		System.out.printf("PESSOA MAIS VELHA: %s \n", nomeMaisVelho);
 		
+		sc.close();
 
 	}
 

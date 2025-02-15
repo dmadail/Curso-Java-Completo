@@ -20,7 +20,7 @@ public class SomaDoisValores {
 		soma = a + b;
 		System.out.println("SOMA = " + soma);
 		
-
+		sc.close();
 	}
 
 }

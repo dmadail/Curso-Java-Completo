@@ -76,6 +76,7 @@ public class Loja {
 		
 		System.out.printf("Total Pedido: %.2f", somaTotalPedido);*/
 		
+		sc.close();
 	}
 
 }

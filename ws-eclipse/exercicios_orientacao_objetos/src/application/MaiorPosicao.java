@@ -37,7 +37,8 @@ public class MaiorPosicao {
 		System.out.println();
 		System.out.printf("MAIOR VALOR = %.1f \n", maiorValor);
 		System.out.printf("POSICAO DO MAIOR VALOR = %d", posicao);
-
+		
+		sc.close();
 	}
 
 }

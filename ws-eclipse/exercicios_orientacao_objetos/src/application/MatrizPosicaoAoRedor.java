@@ -52,6 +52,8 @@ public class MatrizPosicaoAoRedor {
 				}
 			}
 			System.out.println();
+			
+			sc.close();
 		}
 
 	}

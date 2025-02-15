@@ -40,7 +40,8 @@ public class DescobreQuadrante {
 		else {
 			System.out.println("Q4");
 		}
-
+		
+		sc.close();
 	}
 
 }

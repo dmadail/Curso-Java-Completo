@@ -22,6 +22,8 @@ public class ValidaSenha {
 		}
 		
 		System.out.println("Acesso permitido.");
+		
+		sc.close();
 	}
 
 }

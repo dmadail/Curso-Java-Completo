@@ -10,7 +10,8 @@ public class CalculaVenda {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		int cod1, cod2, qtd1, qtd2;
+		int cod1, cod2;
+		int qtd1, qtd2;
 		double valor1, valor2, soma;
 		
 		System.out.println("Vamos calcular o valor da sua compra");
@@ -32,7 +33,9 @@ public class CalculaVenda {
 		soma = ((valor1 * qtd1) + (valor2 * qtd2));
 		
 		System.out.println();
-		System.out.printf("Valor a pagar: %.2f", soma);
+		System.out.printf("As Peças %d e %d, ficaram no valor total: %.2f", cod1, cod2, soma);
+		
+		sc.close();
 
 	}
 

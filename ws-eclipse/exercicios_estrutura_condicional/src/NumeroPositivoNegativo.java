@@ -19,7 +19,8 @@ public class NumeroPositivoNegativo {
 		else {
 			System.out.println("Positivo");
 		}
-
+		
+		sc.close();
 	}
 
 }

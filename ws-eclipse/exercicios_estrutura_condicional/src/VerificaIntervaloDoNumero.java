@@ -32,6 +32,8 @@ public class VerificaIntervaloDoNumero {
 		else {
 			System.out.println("FORA de Intervalo ");
 		}
+		
+		sc.close();
 	}
 
 }

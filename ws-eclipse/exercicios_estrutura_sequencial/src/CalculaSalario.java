@@ -27,6 +27,8 @@ public class CalculaSalario {
 		
 		System.out.println();
 		System.out.printf("Funcionário de número: %d %nSalário: U$ %.2f ", numero,salario);
+		
+		sc.close();
 	}
 
 }

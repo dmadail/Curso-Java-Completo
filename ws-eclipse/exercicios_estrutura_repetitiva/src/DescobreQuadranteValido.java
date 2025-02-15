@@ -35,7 +35,8 @@ public class DescobreQuadranteValido {
 			System.out.println("Digite o valor y: ");
 			y = sc.nextDouble();
 		}
-
+		
+		sc.close();
 
 	}
 	

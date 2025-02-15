@@ -20,7 +20,8 @@ public class DolarParaReais {
 		
 		System.out.println();
 		System.out.printf("Você precisa de %.2f em reais", CurrencyConverter.calculaDolar(dolar,qtdDolar));
-
+		
+		sc.close();
 	}
 
 }
