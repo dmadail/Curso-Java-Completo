@@ -1,21 +1,18 @@
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(System.in);
-
-		int n = sc.nextInt();
+		String a = "Maria";
+		String b = "Alex";
+		String c = "Maria ";
+		String d = "Maria";
 		
-		for (int i=0; i<n; i++) {
-			
-			int x = sc.nextInt();
-			int y = sc.nextInt();
-			
-		}
-		
-		sc.close();
+		System.out.println(a.hashCode());
+		System.out.println(b.hashCode());
+		System.out.println(c.hashCode());
+		System.out.println(d.hashCode());
 
 	}
 

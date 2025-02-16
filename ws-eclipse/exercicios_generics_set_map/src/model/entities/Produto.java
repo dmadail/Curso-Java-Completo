@@ -1,5 +1,7 @@
 package model.entities;
 
+import java.util.Objects;
+
 public class Produto implements Comparable<Produto>{
 	private String nome;
 	private Double preco;
@@ -24,14 +26,41 @@ public class Produto implements Comparable<Produto>{
 	public void setPreco(Double preco) {
 		this.preco = preco;
 	}
+	
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(nome, preco);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Produto other = (Produto) obj;
+		return Objects.equals(nome, other.nome) && Objects.equals(preco, other.preco);
+	}
 
 	@Override
 	public String toString() {
 		return nome + ", " + String.format("%.2f", preco);
 	}
 
-	@Override
+	/*@Override
 	public int compareTo(Produto other) {
 		return preco.compareTo(other.getPreco());
+	}*/
+	
+	
+	@Override
+	public int compareTo(Produto other) {
+		return nome.toUpperCase().compareTo(other.getNome().toUpperCase());
 	}
+	
+	
+	
 }	

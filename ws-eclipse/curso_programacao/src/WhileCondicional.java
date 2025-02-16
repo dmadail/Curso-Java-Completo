@@ -17,7 +17,8 @@ public class WhileCondicional {
 		}
 		
 		System.out.println("Soma = " + soma);
-
+		
+		sc.close();
 	}
 
 }

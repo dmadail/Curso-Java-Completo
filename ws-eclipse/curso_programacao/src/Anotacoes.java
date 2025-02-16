@@ -4,6 +4,8 @@ import java.util.Scanner;
 public class Anotacoes {
 
 	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US); //Define a localição do codigo, no caso definiu para padrão americano de casa decimal
 //	    Sequencial 1º = * / %
 //      2º = + - 
 //		int conta1 = 2 * 6 / 3;
@@ -26,7 +28,7 @@ public class Anotacoes {
 //		double x = 10.35784;
 //		System.out.printf("%.2f%n", x);
 //		System.out.printf("%.4f%n", x); 
-//		Locale.setDefault(Locale.US); //Define a localição do codigo, no caso definiu para padrão americano de casa decimal
+//		
 //		System.out.printf("%.4f%n", x); 
 //		
 //		System.out.println("RESULTADO = " + x + " Metros"); //Exemplo de Concatenação

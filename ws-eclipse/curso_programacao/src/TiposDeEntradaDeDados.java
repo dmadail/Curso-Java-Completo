@@ -24,7 +24,6 @@ public class TiposDeEntradaDeDados {
 		String nome;
 		String amorDaVida;
 		int tempo;
-		double notaCurso;
 		String observacao;
 		
 //		sc.nextLine();
